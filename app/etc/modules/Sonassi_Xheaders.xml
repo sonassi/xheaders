@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/*
+* @category    Module
+* @package     Sonassi_Xheaders
+* @copyright   Copyright (c) 2019 Sonassi
+*/
+-->
+<config>
+  <modules>
+    <Sonassi_Xheaders>
+      <active>true</active>
+      <codePool>community</codePool>
+    </Sonassi_Xheaders>
+  </modules>
+</config>

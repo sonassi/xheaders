@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/*
+* @category    Module
+* @package     Sonassi_Xheaders
+* @copyright   Copyright (c) 2018 Sonassi
+*/
+-->
+<config>
+    <modules>
+        <Sonassi_Xheaders>
+            <version>1.0.0</version>
+            <depends/>
+        </Sonassi_Xheaders>
+    </modules>
+    <global>
+        <blocks>
+            <sonassi.xheaders>
+                <class>Sonassi_Xheaders_Block</class>
+            </sonassi.xheaders>
+        </blocks>
+        <models>
+            <sonassi.xheaders>
+                <class>Sonassi_Xheaders_Model</class>
+            </sonassi.xheaders>
+            <sonxheaders>
+                <class>Sonassi_Xheaders_Model</class>
+            </sonxheaders>
+        </models>
+        <helpers>
+            <sonassi.xheaders>
+                <class>Sonassi_Xheaders_Helper</class>
+            </sonassi.xheaders>
+        </helpers>
+        <events>
+            <controller_action_postdispatch>
+                <observers>
+                    <sonassi.xheaders>
+                        <class>sonassi.xheaders/observer</class>
+                        <method>controllerActionPostdispatch</method>
+                    </sonassi.xheaders>
+                </observers>
+            </controller_action_postdispatch>
+        </events>
+    </global>
+</config>
